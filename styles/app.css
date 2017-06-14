@@ -1,0 +1,94 @@
+/**
+ * So our content will go right to the edge of the screen
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Eventually, every time a user posts, a new article will be created.
+ * The `article` element is the box that contains all the post information
+ */
+article {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  background-color: #efefef;
+}
+
+article header img {
+  width: 100%;
+}
+
+/**
+ * Constrain the article (and img) below so that it can all be viewed
+ * on the screen
+ */
+@media (min-width: 900px) {
+  article {
+    width: 50%;
+  }
+}
+
+article section {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+article footer {
+  font-size: 3em;
+  text-align: center;
+}
+
+article footer time {
+  font-size: 0.5em;
+  padding-bottom: 2em;
+  font-style: italic;
+}
+
+
+/**
+ * These _class_ selectors will be applied to all elements
+ * that have been assigned the corresponding classes through
+ * the class _attribute_.
+ */
+.hot {
+  color: #cc0000;
+}
+
+.cool {
+  color: #0000cc;
+}
+
+.stale {
+  color: #8b4513;
+}
+
+/**
+ * You can do neat things with background images in an element
+ */
+nav {
+  color: #2d2d2d;
+  background-image: url(https://chinafilmbiz.files.wordpress.com/2012/11/miser.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+nav a {
+  color: #00cc00;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  nav {
+    font-size: 2em;
+    text-align: center;
+  }
+}
